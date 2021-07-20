@@ -1,0 +1,99 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 940px;
+    }
+    .comfort, .wireless, .pro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .comfort__img {
+        order: -1;
+        align-self: flex-end;
+    }
+    .comfort__text {
+        align-self: flex-start;
+    }
+    .wireless__img {
+        align-self: flex-start;
+        margin-bottom: 20px;
+    }
+    .wireless__text {
+        align-self: flex-end;
+    }
+    .pro {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .line {
+        display: none;
+    }
+    .pro__img {
+        margin: 20px 0;
+    }
+    .pro__text {
+        align-self: flex-end;
+        position: relative;
+    }
+    .pro__text:nth-child(1) {
+        text-align: left;
+        align-self: flex-start;
+    }
+    .pro__text:first-child:after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        right: -70px;
+        top: 50%;
+    }
+    .pro__text:last-child::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 1px;
+        background: #fff;
+        position: absolute;
+        left: -70px;
+        top: 50%;
+    }
+    .card {
+        max-width: none;
+        width: 40%;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .nav_width {
+        max-width: none;
+        width: auto;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .airpods__heading {
+        font-size: 70px;
+    }
+    .nav_width {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .nav_width img {
+        margin-bottom: 20px;
+    }
+    .footer nav {
+        flex-direction: column;
+    }
+}
+@media (max-width: 520px) {
+    .card {
+        width: 100%;
+    }
+}

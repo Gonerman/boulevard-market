@@ -1,0 +1,244 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Monsterrat';
+    background: #151515;
+    user-select: none;
+}
+
+/* !Header */
+
+.header {
+    background: #282828;
+    padding: 6px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+nav, .nav, .nav__menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav {
+    justify-content: space-between;
+}
+.nav__link {
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav__logo {
+    margin-right: 15px;
+}
+.icons {
+    font-size: 20px;
+    display: flex;
+}
+.icons a:nth-child(1) {
+    margin-right: 25px;
+}
+
+/* !main */
+
+.airpods {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #151515 100%), url(../img/Header-bg.jpg) no-repeat center center /cover;
+    margin-bottom: 30px;
+}
+.airpods__content {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.airpods__heading {
+    font-family: 'Prosto';
+    font-size: 100px;
+    line-height: 75px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 38px;
+}
+.airpods__link {
+    display: inline-block;
+    padding: 13px 14px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #171718;
+}
+.airpods__link i {
+    margin-left: 11px;    
+}
+
+
+.comfort {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.comfort__text {
+    max-width: 538px;
+    width: 100%;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 33px;
+}
+.comfort__img {
+    margin-right: -15px;
+    max-width: 552px;
+    width: 100%;
+}
+
+
+.wireless {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.wireless__img {
+    max-width: 457px;
+    width: 100%;
+}
+.wireless__text {
+    max-width: 540px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.pro {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 79px;
+}
+.pro__text {
+    max-width: 333px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.pro__img {
+    max-width: 268px;
+    width: 100%;
+}
+.line {
+    max-width: 61px;
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+    margin: 0 13px;
+}
+.pro__text:nth-child(1) {
+    text-align: right;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+}
+.card {
+    max-width: 255px;
+    width: 100%;
+    max-height: 311px;
+    height: 100%;
+    border-radius: 6px;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card__heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+.card__img {    
+    width: 100%;
+    max-height: 167px;
+    height: 100%;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+.card__price {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
+}
+.card__link {
+    display: inline-block;
+    max-width: 161px;
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+    background: #151515;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* !footer */
+
+.footer {
+    background: #282828;
+    padding: 80px;
+}
+.icons_footer {
+    color: #fff;
+    display: flex;
+}
+.icons_footer a:nth-child(1) {
+    margin-right: 29px;
+}
+.nav_width {
+    max-width: 671px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons__icon {
+    line-height: 55px;
+    font-size: 60px;
+}
+
