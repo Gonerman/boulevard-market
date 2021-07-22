@@ -2,66 +2,28 @@
     .container {
         max-width: 940px;
     }
-    .comfort, .wireless, .pro {
-        flex-direction: column;
-        align-items: center;
+    .comfort__text {
+        max-width: 438px;
     }
     .comfort__img {
-        order: -1;
-        align-self: flex-end;
-    }
-    .comfort__text {
-        align-self: flex-start;
+        max-width: 452px;
     }
     .wireless__img {
-        align-self: flex-start;
-        margin-bottom: 20px;
+        max-width: 357px;
     }
     .wireless__text {
-        align-self: flex-end;
-    }
-    .pro {
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-    .line {
-        display: none;
-    }
-    .pro__img {
-        margin: 20px 0;
+        max-width: 440px;
     }
     .pro__text {
-        align-self: flex-end;
-        position: relative;
+        max-width: 233px;
     }
-    .pro__text:nth-child(1) {
-        text-align: left;
-        align-self: flex-start;
-    }
-    .pro__text:first-child:after {
-        content: '';
-        display: block;
-        width: 50px;
-        height: 1px;
-        background: #fff;
-        position: absolute;
-        right: -70px;
-        top: 50%;
-    }
-    .pro__text:last-child::before {
-        content: '';
-        display: block;
-        width: 50px;
-        height: 1px;
-        background: #fff;
-        position: absolute;
-        left: -70px;
-        top: 50%;
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
     .card {
         max-width: none;
-        width: 40%;
-        margin: 20px;
     }
 }
 
@@ -73,27 +35,58 @@
         max-width: none;
         width: auto;
     }
+    .comfort, .wireless, .pro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .comfort__text {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .wireless__text {
+        text-align: center;
+    }
+    .pro__text {
+        text-align: center;
+        margin: 15px;
+        max-width: 333px;
+    }
+    .pro__text:nth-child(1) {
+        text-align: center;
+    }
+    .line {
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
     }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .airpods__heading {
-        font-size: 70px;
+        font-size: 50px;
     }
-    .nav_width {
+    nav, .nav {
         flex-direction: column;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
-    .nav_width img {
-        margin-bottom: 20px;
+    .footer {
+        padding: 40px;
     }
-    .footer nav {
-        flex-direction: column;
+    .nav__logo {
+        margin-bottom: 15px;
     }
 }
 @media (max-width: 520px) {
     .card {
         width: 100%;
+    }
+    .footer {
+        padding: 5px;
+    }
+    .airpods__heading {
+        text-align: center;
     }
 }
